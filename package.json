@@ -1,0 +1,25 @@
+{
+  "name": "backendtechnicaltest",
+  "version": "0.1.0",
+  "description": "BackEnd de la página web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Miguel-GH681/BackEndTechnicalTest.git"
+  },
+  "author": "Alvaro_Gonzalez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Miguel-GH681/BackEndTechnicalTest/issues"
+  },
+  "homepage": "https://github.com/Miguel-GH681/BackEndTechnicalTest#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mssql": "^9.0.1",
+    "sequelize": "^6.27.0"
+  }
+}
