@@ -1,11 +1,11 @@
 const { Model, DataTypes } = require('sequelize');
 const connection = require('../utilities/database.connection');
 
-class Pais extends Model{}
-Pais.init({
+class PaisModel extends Model{}
+PaisModel.init({
     Pais : {
         type : DataTypes.STRING,
-        primaryKey: true
+        primaryKey: true,
     },
     NomPais : DataTypes.STRING
     },{
@@ -16,4 +16,4 @@ Pais.init({
         updatedAt: false
 });
 
-module.exports = Pais;
+module.exports = PaisModel;

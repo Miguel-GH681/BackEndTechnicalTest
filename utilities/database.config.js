@@ -1,8 +1,8 @@
 module.exports = {
     database: {
-        username: 'sa',
-        password: 'admin12345',
+        username: 'sqladmin',
+        password: '$admin12345',
         database: 'TestDataBase',
-        host: 'localhost'
+        host: 'technicaltestserverdatabase.database.windows.net'
     }
 }

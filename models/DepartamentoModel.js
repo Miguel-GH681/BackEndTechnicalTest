@@ -1,10 +1,10 @@
 const { Model, DataTypes } = require('sequelize');
 const connection = require('../utilities/database.connection');
 
-const Pais = require('../models/pais.model');
+const PaisModel = require('../models/PaisModel');
 
-class Departamento extends Model {}
-Departamento.init({
+class DepartamentoModel extends Model {}
+DepartamentoModel.init({
     Pais : {
         type: DataTypes.STRING,
         primaryKey: true
@@ -22,7 +22,7 @@ Departamento.init({
         updatedAt: false
     })
 
-Departamento.belongsTo(Pais, {foreignKey: 'Pais'});
-Pais.hasMany(Departamento, {foreignKey: 'Pais'});
+DepartamentoModel.belongsTo(PaisModel, {foreignKey: 'Pais'});
+PaisModel.hasMany(DepartamentoModel, {foreignKey: 'Pais'});
 
-module.exports = Departamento;
+module.exports = DepartamentoModel;
